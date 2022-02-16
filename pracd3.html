@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <form action="">
+            <table><center>
+                <tr>
+           <td> <label for="uname">Username:</label></td>
+          <td><input type="text" id="uname" placeholder="enter user name"></td>
+            </tr>
+
+            <tr>
+                <td> <label for="pwd">Password:</label></td>
+          <td><input type="Password" id="pwd" placeholder="enter password"></td>
+        </tr>
+        <tr>
+            <td> <label for="email">Email:</label></td>
+      <td><input type="email" id="email" placeholder="enter email"></td>
+    </tr>
+        <tr>
+            <td><label for="add">Address:</label></td>
+            <td><textarea id="add"></textarea> </td>
+        </tr>
+          <tr>
+              <td><input type="radio" id="type1" name="empType" value="Regular"></td>
+              <td> <label for="type1">Regular</label></td>          
+              <td><input type="radio" id="type2" name="empType" value="Part time"></td>
+              <td> <label for="type1">part time</label></td>
+        </tr>
+
+       
+        <tr>
+            <td><input type="checkbox" id="city1" name="city" value="New york" checked></td>
+            <td> <label for="city1">New york</label></td>        
+            <td><input type="checkbox" id="city1" name="city" value="Ohio"></td>
+            <td> <label for="city1">Ohio</label></td>
+        </tr>
+         
+        
+                <tr>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="Select Country">Select Country:</td>
+                    
+                <td>
+                <select id="country" name="" ><!-- can also add multiple -->
+                <option>select</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Germany">Germany</option>
+                <option>Canada</option>
+            </select></td></tr>
+        </td>
+        <tr>
+            <td>
+                <input list="browser">
+                <datalist id="browser">
+                    <option value="IE">IE
+                        <option value="chrome">
+                            <option value="safari"></option>
+                </datalist>
+
+            </td>
+        </tr>
+        
+        </tr></table>
+        <tr>
+            <td>
+                <input type="submit" name="" value="Signup">
+            </td>
+            <td>
+                <input type="submit" name="" value="Reset">
+            </td>
+            <td><input type="button" name="" value="click me" onclick="alert('Button clicked')";></td>
+        </tr>
+        <tr><td>
+        <fieldset>
+            <legend>Personal /information</legend>
+            <label for="uname">User Name:</label>
+            <input type="text" id="uname" placeholder="Enter User Name"/>
+            <label for="add">Address:</label>
+            <textarea id="add"></textarea>
+
+        </fieldset></td></tr>
+    </center>
+    
+
+    </form>
+    </body>
+</html>
+
+
+
