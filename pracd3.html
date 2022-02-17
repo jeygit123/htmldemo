@@ -5,7 +5,7 @@
     </head>
     <body>
         <form action="">
-            <table><center>
+            <table>
                 <tr>
            <td> <label for="uname">Username:</label></td>
           <td><input type="text" id="uname" placeholder="enter user name"></td>
@@ -25,9 +25,9 @@
         </tr>
           <tr>
               <td><input type="radio" id="type1" name="empType" value="Regular"></td>
-              <td> <label for="type1">Regular</label></td>          
+              <td><label for="type1">Regular</label></td>          
               <td><input type="radio" id="type2" name="empType" value="Part time"></td>
-              <td> <label for="type1">part time</label></td>
+              <td><label for="type2">Part time</label></td>
         </tr>
 
        
@@ -59,6 +59,7 @@
         </td>
         <tr>
             <td>
+                <label>Select Browser:</label>
                 <input list="browser">
                 <datalist id="browser">
                     <option value="IE">IE
@@ -78,18 +79,16 @@
                 <input type="submit" name="" value="Reset">
             </td>
             <td><input type="button" name="" value="click me" onclick="alert('Button clicked')";></td>
-        </tr>
+        </tr><br><br>
         <tr><td>
-        <fieldset>
-            <legend>Personal /information</legend>
-            <label for="uname">User Name:</label>
-            <input type="text" id="uname" placeholder="Enter User Name"/>
-            <label for="add">Address:</label>
-            <textarea id="add"></textarea>
+        <fieldset></td></tr>
+            <legend>Personal information</legend>
+          <tr> <td> <label for="uname">User Name:</label></td>
+           <td> <input type="text" id="uname" placeholder="Enter User Name"/></td></tr><br>
+  <br>     <tr>   <td>  <label for="add">Address:</label></td>
+           <td> <textarea id="add"></textarea></td></tr>
 
-        </fieldset></td></tr>
-    </center>
-    
+  </fieldset>   
 
     </form>
     </body>
