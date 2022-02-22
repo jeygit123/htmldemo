@@ -1,16 +1,24 @@
 <html>
     <head>
         <title>expenses</title>
-        <style>a{text-decoration: wavy
-            color:wheat;}</style>
+        <link rel="stylesheet" href="style.css">
+        <style>
+           
+            #trns{accent-color:green;}  
+            #mrg{text-decoration:underline ;}  
+        </style>
+       
     </head>
     <body><center>
-        <h1></h1>Monthly Expenses Report</h1><br><br>
-        <table>
+        <form action="/class_d2_connect_css.html" method="get">
+        <h1>Monthly Expenses Report</h1>
+        <a href="hw_details_html.html">Go to Hw_html</a>
+        <p style="color:rgb(255, 0, 128);">It's likely that some of your survey questions won't apply to all respondents taking your survey.</p>
+        <table><hr>
             
         <tr>
-       <td><label for="username">Name:</label></td>
-       <td><input type="text" id="username" placeholder="Enter name" value=""></td>
+       <td><label for="us">Name:</label></td>
+       <td><input type="text" id="us" placeholder="Enter name" value=""></td>
        </tr>
 
        <tr>
@@ -34,8 +42,8 @@
         </tr>
 
         <tr>
-            <td>Transport:</td>
-            <td><input type="radio" id="trns" name="trns type" value="public transport"></td>
+            <td >Transport:</td>
+            <td style="accent-color:green"><input type="radio" id="trns" name="trns type" value="public transport"></td>
             <td><label for="trns">Public Transport</label></td>
             <td><input type="radio" id="trns1" name="trns type" value="car"></td>
             <td><label for="trns1">Car</label></td>
@@ -86,6 +94,7 @@
     <td><input type="text" id="mis" placeholder="Enter any misc Amount"></td>
 </tr>
 
+
 <tr>
     <td>
         <input type="submit"  name="" value="Submit">
@@ -95,9 +104,39 @@
         <input type="Reset"  name="" value="Reset">
         
     </td>
-    <td><a href="hw_details_html.html">HTML.details</td>
+   
     
-</tr>
+</tr></form>
+<table><hr>
+    <h1>Design below tables</h1><br>
+        <caption>Life expectancy by current age</caption>
+        <table border="5">
+            
+            <tr>
+                <th colspan="2">66</th>
+                <th colspan="2">40</th>
+                <th colspan="2">20</th>
+
+            </tr>
+            <tr>
+                <td>Men</td>
+                <td>Women</td>
+                <td>Men</td>
+                <td>Women</td>
+                <td>Men</td>
+                <td>Women</td>
+            </tr>
+            <tr>
+                <td>82</td>
+                <td>85</td>
+            
+                <td>78</td>
+                <td>82</td>
+            
+                <td>77</td>
+                <td>81</td>
+            </tr>
+</table>
 
     </center>
     </body>
