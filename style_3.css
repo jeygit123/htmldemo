@@ -1,0 +1,35 @@
+/* rgba eg ,margin eg*/
+#colr{background-color:rgba(295, 73,24,0.9);
+/* margin-left: 100px;} */
+/* margin-top: 250px; */
+margin:100px 20px 50px 100px;
+/* padding-top: 50px;} */
+padding: 50px 20px 50px 20px;}
+
+/* hsl eg padding*/
+#hr{background-color: hsl(110, 90%, 48%);
+/* padding-left: 10px;} */
+/* padding-left: 50px; */
+padding-top: 500px;}
+
+/* hsl vs hsla */
+#nm{background-color: hsla(110, 90%, 48%, 0.5);}
+/* background image in body */
+
+body{background-image:url(image/pic.png);
+/* background-repeat: repeat-x; */
+background-size: 250px;
+background-repeat: no-repeat;
+background-attachment:scroll;}
+/* background-attachment: fixed;} */
+/* background-repeat: repeat-y; */
+/* background-repeat: space;} */
+/* background-repeat: round;} */
+
+
+
+/* background image in table */
+table{background-image:url(image/cnfu6035.jpg);
+background-repeat: no-repeat;}
+/* border width,size,color */
+#bordr{border:5px solid blue;color:; }

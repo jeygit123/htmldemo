@@ -1,0 +1,17 @@
+#p1::after{
+    content: '';
+    display:block;
+    width: 15px;
+    height:15px;
+background-color: blue;}
+
+#p1::before{content:'';
+display:block;
+width:30px;
+height:40px;
+background-color:pink;}
+
+.em:hover{background-color: blueviolet;}
+
+.nm:focus{color:red;}
+

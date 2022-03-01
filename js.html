@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+function add()
+{
+    var a=document.getElementById('txt1').value;
+    var b=document.getElementById('txt2').value;
+    var c=+a + +b;
+    document.getElementById("txt3").value=c;
+}
+function sub()
+{
+    var a=document.getElementById('txt1').value;
+    var b=document.getElementById('txt2').value;
+    var c=+a - +b;
+    document.getElementById("txt3").value=c;
+}
+function mul()
+{
+    var a=document.getElementById('txt1').value;
+    var b=document.getElementById('txt2').value;
+    var c=+a * +b;
+    document.getElementById("txt3").value=c;
+}
+function div()
+{
+    var a=document.getElementById('txt1').value;
+    var b=document.getElementById('txt2').value;
+    var c=+a / +b;
+    document.getElementById("txt3").value=c;
+}
+    </script>
+</head>
+<body>
+    <p id="txtid">Before the script...</p>
+    <br>
+   Username: <input type="text" id="uname" size="20"><br><br>
+   Password: <input type="password" id="pwd" size="20"><br><br>
+    <button onclick="changecolor()">click here</button> 
+
+    first number: <input type="number" id="first" size="20"><br><br>
+    second number: <input type="number" id="second" size="20"><br><br>
+    result:<input type="number" id="result"><br><br>
+    <button onclick="getsum()">click here</button> 
+    </body>
+
+<script>
+    console.log("excecuting script from within the Html..");
+    function changecolor(){
+    var name= document.getElementById("uname").value;
+    var Password=document.getElementById("pwd").value;
+
+    if(name==''|| Password==''){
+        alert('username or password cannot be blank')
+    }
+    else{
+        alert('welcome'+ name);
+    }
+    
+    document.body.style.backgroundColor="cyan";
+    document.getElementById("txtid").innerHTML="After button clicked";
+}
+function getsum(){
+    var a,b,c;
+    
+    a= Number(document.getElementById("first").value);
+    b=Number(document.getElementById("second").value);
+    c=a+b;
+    document.getElementById("result").value=c;
+
+}
+</script><hr>
+<!-- calculator -->
+<caption>Calculation</caption><br><br>
+<label for="txt1">Value1:</label> 
+<input type="number"placeholder="Enter number" id="txt1" name="">
+<br><br>
+<label for="txt2">Value2:</label>
+<input type="number"placeholder="Enter number" id="txt2" name="">
+<br><br>
+<label for="txt3">Result:</label>
+<input type="number" placeholder="Total Value" id="txt3" name=""><br><br>
+<input type="button" value="ADD" onclick="add()" name="">
+<input type="button" value="SUB" onclick="sub()" name="">
+<input type="button" value="MUL" onclick="mul()" name="">
+<input type="button" value="DIV" onclick="div()" name="">
+<p id="p"></p>
+
+<script type="text/javascript">
+    function add()
+    {
+        var a=document.getElementById('txt1').value;
+        var b=document.getElementById('txt2').value;
+        var c=+a + +b;
+        document.getElementById("txt3").value=c;
+    }
+    function sub()
+    {
+        var a=document.getElementById('txt1').value;
+        var b=document.getElementById('txt2').value;
+        var c=+a - +b;
+        document.getElementById("txt3").value=c;
+    }
+    function mul()
+    {
+        var a=document.getElementById('txt1').value;
+        var b=document.getElementById('txt2').value;
+        var c=+a * +b;
+        document.getElementById("txt3").value=c;
+    }
+    function div()
+    {
+        var a=document.getElementById('txt1').value;
+        var b=document.getElementById('txt2').value;
+        var c=+a / +b;
+        document.getElementById("txt3").value=c;
+    }
+        </script>
+</html>
+

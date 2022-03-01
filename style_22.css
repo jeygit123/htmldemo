@@ -1,0 +1,47 @@
+/* using universal */
+*{background-color: rgb(210, 187, 231);
+}
+
+h1{text-transform:uppercase;
+    text-decoration:underline;
+text-align: center;
+color:rgb(59, 59, 189)}
+
+/* using id */
+#hr{text-transform: uppercase;}
+
+/* class */
+.p1{background-color:rgb(204, 147, 143)}
+
+ /* element.class */
+ p.uni{font-style: italic;
+    background-color: beige;
+    color:rgb(24, 163, 163)}
+    
+    /* div,p */
+    div,p{color:wheat}
+    
+    /* div p */
+    div p{color:blue}
+    
+    /* div>p */
+    div>p{font-style: italic;}
+    
+    /* p>div not working*/
+    p~div{color:greenyellow;}
+
+
+
+/* div+p not working*/
+div+p{font-style:italic;
+color:red;
+font-size: x-large;}
+
+/* span > P */
+span > p{font-style: italic;}
+
+/* :visited */
+
+/* /* a:visited{color:rgb(228, 127, 144);} */
+a:visited{color:red;
+content:''}
